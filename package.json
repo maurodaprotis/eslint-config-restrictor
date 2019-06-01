@@ -43,7 +43,5 @@
     "eslint-plugin-react-hooks": "^1.6.0",
     "prettier": "^1.17.1"
   },
-  "dependencies": {
-    "np": "^5.0.2"
-  }
+  "dependencies": {}
 }
