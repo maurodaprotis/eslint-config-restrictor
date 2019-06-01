@@ -44,7 +44,7 @@ Tip: You can alternatively put this object in your `package.json` under the prop
 
 ## Add additional configuration
 
-A few extra configuration files are available but they require additionals dependencies
+A few extra configuration files are available but they require additionals dependencies. You can combine them.
 
 ### React
 
@@ -91,6 +91,23 @@ And extend your `.eslintrc` file
 ```json
 {
   "extends": ["restrictor", "restrictor/prettier"]
+}
+```
+
+_Important note:_ `restrictor/prettier` should be placed last because overrides some rules from the other config files.
+
+### All of them!
+
+You can use them all together if the project requires it and you install the neccesary dependencies.
+
+```json
+{
+  "extends": [
+    "restrictor",
+    "restrictor/react",
+    "restrictor/typescript",
+    "restrictor/prettier"
+  ]
 }
 ```
 
