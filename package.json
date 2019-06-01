@@ -4,6 +4,7 @@
   "description": "Opinionated ESLint Config",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"No test specified\"",
     "lint": "eslint './**/*.{js,jsx,ts,tsx}'",
     "lint:fix": "eslint './**/*.{js,jsx,ts,tsx}' --fix"
   },
@@ -41,5 +42,8 @@
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0",
     "prettier": "^1.17.1"
+  },
+  "dependencies": {
+    "np": "^5.0.2"
   }
 }
