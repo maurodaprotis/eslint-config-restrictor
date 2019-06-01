@@ -54,7 +54,7 @@ For react projects you should also extend this configuration.
 npm install -D eslint-config-react-app eslint-plugin-react eslint-plugin-flowtype eslint-plugin-import eslint-plugin-react-hooks eslint-plugin-jsx-a11y
 ```
 
-And extend your `.eslintrc` file
+And extend your `.eslintrc` file.
 
 ```json
 {
@@ -86,7 +86,7 @@ For use prettier in your project you should also extend this configuration.
 npm install -D prettier eslint-plugin-prettier eslint-config-prettier
 ```
 
-And extend your `.eslintrc` file
+And extend your `.eslintrc` file.
 
 ```json
 {
@@ -98,7 +98,15 @@ _Important note:_ `restrictor/prettier` should be placed last because overrides 
 
 ### All of them!
 
-You can use them all together if the project requires it and you install the neccesary dependencies.
+You can use them all together if the project requires.
+
+Install all `devDependencies` together.
+
+```
+npm install -D eslint-config-react-app eslint-plugin-react eslint-plugin-flowtype eslint-plugin-import eslint-plugin-react-hooks eslint-plugin-jsx-a11y @typescript-eslint/eslint-plugin @typescript-eslint/parser prettier eslint-plugin-prettier eslint-config-prettier
+```
+
+And add all the config files to `.eslintrc`.
 
 ```json
 {
@@ -133,7 +141,7 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 }
 ```
 
-OR in a `.prettierrc`
+OR in a `.prettierrc`.
 
 ```js
 {
