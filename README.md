@@ -78,6 +78,22 @@ And extend your `.eslintrc` file
 }
 ```
 
+### Node.js
+
+For use in a node.js project you should also extend this configuration.
+
+```
+npm install -D eslint-plugin-import eslint-plugin-node eslint-plugin-promise
+```
+
+And extend your `.eslintrc` file.
+
+```json
+{
+  "extends": ["restrictor", "restrictor/node"]
+}
+```
+
 ### Prettier
 
 For use prettier in your project you should also extend this configuration.
