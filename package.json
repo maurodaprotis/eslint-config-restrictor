@@ -25,6 +25,17 @@
     "url": "https://github.com/maurodaprotis/eslint-config-restrictor/issues"
   },
   "homepage": "https://github.com/maurodaprotis/eslint-config-restrictor#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "peerDependencies": {
     "eslint": "^5.16.0",
     "babel-eslint": "^10.0.1"
@@ -44,6 +55,8 @@
     "eslint-plugin-promise": "^4.1.1",
     "eslint-plugin-react": "^7.13.0",
     "eslint-plugin-react-hooks": "^1.6.0",
+    "husky": "^2.4.0",
+    "lint-staged": "^8.2.0",
     "prettier": "^1.17.1"
   },
   "dependencies": {}
