@@ -6,6 +6,14 @@ module.exports = {
     node: true,
   },
   extends: [ 'eslint:recommended' ],
+  overrides: [
+    {
+      files: [ '*.styles.{js,ts}' ],
+      rules: {
+        'sort-keys': 'off',
+      },
+    },
+  ],
   parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
