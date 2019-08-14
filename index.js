@@ -98,6 +98,7 @@ module.exports = {
     'multiline-ternary': ['error', 'always-multiline'],
     'new-cap': [ 'error' ],
     'new-parens': [ 'error' ],
+    'newline-after-var': ['error', 'always'],
     'newline-per-chained-call': [ 'error' ],
     'no-alert': [ 'error' ],
     'no-bitwise': [ 'error' ],
