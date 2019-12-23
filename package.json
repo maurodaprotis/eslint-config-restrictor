@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-restrictor",
-  "version": "0.5.3",
+  "version": "1.0.0",
   "description": "Opinionated ESLint Config",
   "main": "index.js",
   "scripts": {
