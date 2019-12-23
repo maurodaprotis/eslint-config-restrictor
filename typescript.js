@@ -1,6 +1,10 @@
 /* eslint-disable no-magic-numbers */
 module.exports = {
-  extends: [ 'plugin:@typescript-eslint/recommended' ],
+  extends: [
+'plugin:import/typescript',
+'plugin:@typescript-eslint/recommended',
+'plugin:@typescript-eslint/recommended',
+],
   overrides: [
     {
       files: [ '*.styles.ts' ],
@@ -21,14 +25,13 @@ module.exports = {
     jsx: true,
     useJSXTextNode: true,
   },
-  plugins: [ '@typescript-eslint' ],
+  plugins: ['import', '@typescript-eslint'],
   rules: {
     '@typescript-eslint/adjacent-overload-signatures': [ 'error' ],
-    '@typescript-eslint/array-type': ['error', 'array'],
+    '@typescript-eslint/array-type': ['error', { default: 'array' }],
     '@typescript-eslint/camelcase': [ 'error' ],
     '@typescript-eslint/class-name-casing': [ 'error' ],
-    '@typescript-eslint/explicit-function-return-type': [ 'error' ],
-    '@typescript-eslint/explicit-member-accessibility': [ 'error' ],
+    '@typescript-eslint/explicit-function-return-type': [ 'warn' ],
     '@typescript-eslint/indent': [
       'error',
       2,
@@ -39,7 +42,6 @@ module.exports = {
     '@typescript-eslint/interface-name-prefix': [ 'error' ],
     '@typescript-eslint/member-delimiter-style': [ 'error' ],
     '@typescript-eslint/member-ordering': [ 'error' ],
-    '@typescript-eslint/no-angle-bracket-type-assertion': [ 'error' ],
     '@typescript-eslint/no-empty-interface': [
       'error',
       {
@@ -65,8 +67,19 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': [ 'error' ],
     '@typescript-eslint/no-useless-constructor': [ 'error' ],
     '@typescript-eslint/prefer-function-type': [ 'error' ],
-    '@typescript-eslint/prefer-interface': [ 'error' ],
     '@typescript-eslint/type-annotation-spacing': [ 'error' ],
     '@typescript-eslint/unified-signatures': [ 'error' ],
+    'import/no-unresolved': 'error',
+    'node/no-missing-import': 'off',
+  },
+  settings: {
+    'import/parsers': {
+      '@typescript-eslint/parser': ['.ts', '.tsx'],
+    },
+    'import/resolver': {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
   },
 };

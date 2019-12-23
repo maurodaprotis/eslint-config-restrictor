@@ -67,7 +67,7 @@ And extend your `.eslintrc` file.
 For Typescript project you should also extend this configuration.
 
 ```
-npm install -D @typescript-eslint/eslint-plugin @typescript-eslint/parser
+npm install -D @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-import-resolver-typescript
 ```
 
 And extend your `.eslintrc` file

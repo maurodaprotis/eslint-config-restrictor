@@ -10,4 +10,9 @@ module.exports = {
     'plugin:node/recommended',
   ],
   plugins: [],
+  rules: {
+    'node/no-unpublished-import': 'off',
+    'node/no-unpublished-require': 'off',
+    'node/no-unsupported-features/es-syntax': 'off',
+  },
 };
